@@ -35,7 +35,6 @@ use yii\base\Exception;
  * @package   JWT Tokens
  * @since     1.0.0
  *
- * @property  PdfService $pdf
  * @property  Settings $settings
  * @method    Settings getSettings()
  */
@@ -123,7 +122,7 @@ class JwtTokens extends Plugin
  */
         Craft::info(
             Craft::t(
-                'pdf-maker',
+                'jwt-tokens',
                 '{name} plugin loaded',
                 ['name' => $this->name]
             ),
