@@ -61,6 +61,13 @@ class JwtTokens extends Plugin
      */
     public $schemaVersion = '1.0.0';
 
+    /**
+     * Set to `true` if the plugin should have a settings view in the control panel.
+     *
+     * @var bool
+     */
+    public bool $hasCpSettings = true;
+
     // Public Methods
     // =========================================================================
 
