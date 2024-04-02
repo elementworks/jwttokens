@@ -1,0 +1,42 @@
+{
+    "name": "elementworks/jwt-tokens",
+    "description": "Create JWT tokens",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "jwt tokens"
+    ],
+    "support": {
+        "docs": "https://github.com/elementworks/jwt-tokens/blob/master/README.md",
+        "issues": "https://github.com/elementworks/jwt-tokens/issues"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Steve Rowling",
+            "homepage": "https://springworks.co.uk"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+        "firebase/php-jwt": "^6.10.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "elementworks\\jwttokens\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "JWT Tokens",
+        "handle": "jwt-tokens",
+        "developer": "Steve Rowling",
+        "developerUrl": "https://springworks.co.uk",
+        "documentationUrl": "https://github.com/elementworks/jwt-tokens/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/elementworks/jwt-tokens/master/CHANGELOG.md",
+        "class": "elementworks\\jwttokens\\JwtTokens"
+    }
+}

@@ -1,0 +1,27 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * JWT Tokens plugin for Craft CMS 3.x
+ *
+ * JWT Tokens Settings.twig
+ *
+ * @author    Steve Rowling
+ * @copyright Copyright (c) 2024 Steve Rowling
+ * @link      https://springworks.co.uk
+ * @package   JWT Tokens
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.autosuggestField({
+        label: 'Signing Secret',
+        instructions: 'Signing secret for JWT token',
+        id: 'signingSecret',
+        name: 'signingSecret',
+        class: 'code',
+        value: settings.signingSecret,
+        suggestEnvVars: true
+    })
+}}
