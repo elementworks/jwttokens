@@ -38,7 +38,7 @@ class JwtTokensVariable
      */
     public function createToken(array $payload, string $algorithm = 'HS256'): string
     {
-        $signingSecret = JwtTokens::$settings->getSigningSecret();
+        $signingSecret = JwtTokens::$plugin->getSettings()->getSigningSecret();
 
         return JWT::encode($payload, $signingSecret, $algorithm);
     }
